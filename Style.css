@@ -42,7 +42,7 @@
     top: 0;
     right: 0;
     /* height: 100vh; */
-    width: 360px;
+    width: 100%;
     z-index: 999;
     background-color: #ad0d8d00;
     backdrop-filter: blur(10px);
@@ -66,10 +66,11 @@
   }
 
 
-  /* .clo{
-    background: red;
-    padding: 0.5rem;
-  } */
+  .clo{
+    background: green;
+    padding: 0.2rem;
+    margin: 0.5rem;
+  }
 
   nav ul{
     list-style: none;
@@ -657,7 +658,7 @@ hr{
 .Hero5{
     width: 100%;
     height: 100vh;
-    background: url(Images/gr);
+    background: url(Images/greenbackground11.jpg);
     margin: auto;
     padding: 2rem 1rem;
     background-position: center;
@@ -2562,13 +2563,16 @@ hr{
 /* hero3 */
 
 
+/* no code here */
+
+
 
 /* hero4 */
 
 .Hero4{
   width: 100%;
   height: 200vh;
-  padding: 0.5rem 0.5rem;
+  padding: 3rem 0.5rem;
 }
 
 .Hero4 h1{
@@ -2605,15 +2609,13 @@ hr{
   height: 15%;
 }
 
-/* .row, */
-
 .row{
  margin-bottom: 150px;
 }
 
 .rowinner p{
   font-size: 1.2rem;
-  text-align: center;
+  text-align: left;
   font-weight: 300;
   width: 40%;
 }
@@ -2708,7 +2710,7 @@ margin-top: 0.8rem;
 
 .hero7{
   width: 100%;
-  height: 225vh;
+  height: 250vh;
   padding: 0.1rem; 
   margin: auto;
   align-items: center;
@@ -2758,7 +2760,7 @@ margin-top: 0.8rem;
   border-radius: 0.625rem;
   font-size: 1.2rem;
   font-weight: 600;
-  margin-top: 76rem;
+  margin-top: 2rem;
   align-items: center;
 }
 
