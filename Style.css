@@ -45,7 +45,7 @@
     width: 100%;
     z-index: 999;
     background-color: #ad0d8d00;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     display: none;
     flex-direction: column;
     gap: 1.6rem;
@@ -3378,27 +3378,48 @@ margin-top: 0.8rem;
   font-size: 20px; 
 }
 
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
 
 
 
 
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+
+
+  
+}
 
 
 
 
+@media screen and (min-width: 1025px) and (max-width: 1200px){
 
 
 
+  
+}
 
 
 
+@media screen and (min-width: 1201px) and (max-width: 1288px){
 
 
 
+  
+}
+
+
+@media screen and (min-width: 1289px) and (max-width: 1550px){
 
 
 
-
-
-
+  
 }
