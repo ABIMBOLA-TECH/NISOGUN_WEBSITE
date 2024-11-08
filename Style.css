@@ -3418,7 +3418,9 @@ margin-top: 0.8rem;
 .btn button{
   width: 100%;
 }
-
+.signin h2{
+  text-align: center;
+}
 
 .signin p{
   width: 100%;
