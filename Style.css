@@ -66,11 +66,11 @@
     /* background-color: rgb(185, 161, 9); */
   }
   .sidebar a{
-    /* width: 100%; */
+    width: 100%;
   }
 
   .sidebar li a{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
     color: #09ca59;
     font-weight: 700;
@@ -100,6 +100,7 @@
   .sidebar button a{
     color: #09ca59; 
   }
+
 
   .clo{
     background: green;
