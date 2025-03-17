@@ -1,228 +1,211 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto';
-    
+    font-family: 'poppins', Times, sans-serif;
+    text-decoration: none;  
+    list-style: none;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
 }
 
 .NISOGUN{
-  /* height: 100vh; */
+  max-width: 1550px;
   width: 100%;
   margin: auto;
   overflow-x: hidden;
 }
 
 
-/* THE HEADER PANEL and HERO1 BEGINS */
+/* ----------------THE HEADER PANEL------------------*/
 
-.headerbar{
-    width: 100%;
-    display:flex;
-    align-items: center;
-    background: transparent;
-    height: 5rem;
-    justify-content: space-between;
-    position: relative;
-    margin: auto;
-    /* padding: 1rem 1rem; */
-  } 
-  
-  .logo img{
-    width: 80%;
-  }
-
-  .sidebar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 100%;
-    /* z-index: 999; */
-    background-image:url(Images/NIS_SEC.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    opacity: 1;
-    /* backdrop-filter: blur(10px); */
-    display: none;
-    flex-direction: column;
-    gap: 1.6rem;
-    align-items: flex-start;
-    text-align: center;
-    justify-content: flex-start;
-    margin-bottom: 10px;
-    /* padding: 1rem 1rem; */
-  }
-
-
-  .sidebar li{
-    width: 100%;
-    /* background-color: rgb(185, 161, 9); */
-  }
-  .sidebar a{
-    width: 100%;
-  }
-
-  .sidebar li a{
-    font-size: 1.3rem;
-    text-align: center;
-    color: #09ca59;
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .sidebar button{
-    width: 12rem;
-    padding: 0.5rem;
-    margin-left: 0px;
-    margin: auto;
-    align-items: center;
-    border-radius: 40px;
-    cursor: pointer;
-    outline: none;
-    margin-bottom: 18rem;
-  }
-
-  /* .sidebar li a :hover{
-    color: rgb(44, 5, 160);
-    background: #ad0d8d;
-  } */
-
-  .sidebar button a{
-    color: #09ca59; 
-  }
-
-
-  .clo{
-    background: green;
-    padding: 0.2rem;
-    margin: 0.5rem;
-  }
-
-  nav ul{
-    list-style: none;
-    display: flex;
-    margin: auto;
-    gap: 0rem;
-    align-items: center;
-    justify-content: center;
-  } 
-  
-  nav ul li{
-    padding: 0rem .5rem;
-    
-  }
-  nav ul li a{
-    width: 9.5rem;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    text-align: center;
-    border-radius: 0.63rem;
-    padding: 0.4rem 0.5rem;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .headerbar ul li a:hover{
-    background: #f4f6f6;
-    color: green;
-  }
-  
-  .submenu{
-    display: none;
-    position: absolute;
-    background: yellowgreen;
-  }
-  
-  .headerbar ul li:hover .submenu{
-    display: block;
-    position: absolute;
-    margin-top: 1rem;
-    margin-left: -1.25rem;
-  }
-  
-  .headerbar ul li:hover .submenu ul{
-    display: block;
-    margin: 0.625rem;
-    
-  }
-  
-  .headerbar ul li:hover .submenu ul li{
-    width: 15rem;
-    padding: 1rem;
-    border-bottom: 1px solid #fff;
-  }
-  
-  ul button{
-    border-radius: 1rem;
-    width: 8rem;
-    margin: auto;
-    padding: 0.5rem;
-    margin-left: 2rem;
-    border-color: yellow;
-    background: transparent;
-    font-family: 'poppins';
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-
-  ul button a{
-    text-decoration: none;
-    color: green;
-    margin: auto;
-    font-size: 1.3rem;
-    font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 0.3rem;
-    
-  }
-  
-  ul button a:hover{
-    color: white;
-    background: transparent;
-  }
-
-
-.header_hero1container{
+.header{
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
-  /* height: 100vh; */
-  margin: auto;
-  justify-content: center;
-  background-image: url(Images/pic1.jpg);
-  background-size: cover;
-  background-position: center;
-  animation: change 50s infinite ease-in-out;
+   padding: 0 15px;
+  background-color: #fff;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+  z-index: 10;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .logo img{
+    vertical-align: middle;
+    width: 70%;
+}
+
+.header .menu .head .logo img{
+    width: 50%;
+}
+
+.header .menu .head{
+    display: none;
+}
+
+.header .menu > ul > li{
+    display: inline-block;
+}
+
+.header .menu > ul > li:not(:last-child){
+    margin-right: 40px;
+}
+
+.header .menu .dropdown{
+    position: relative;
+}
+
+.header .menu a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+    color: green;
+    line-height: 40px;
+    display: block;
+}
+
+.header .menu > ul > li > a{
+    padding: 24px 0;  
+}
+
+.header .menu  > ul > .dropdown > a{
+    padding-right: 15px;
+}
+
+.header .menu i{
+    font-size: 10px;
+    pointer-events: none;
+    user-select: none;
+    position: absolute;
+   color: green;
+   top: calc(50% - 5px); 
 }
 
 
+.header .menu > ul > li > i{
+    right:  0;  
+}
+.header .menu .sub-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 230px;
+    padding: 15px 0;
+    background-color: #fff;
+    box-shadow: 0 0 5px hsla(0, 0%, 100%, 0.5);
+    z-index: 1;
+    transform-origin: top;
+    transform: scaleY(0);
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.header .menu .sub-menu-right{
+    left: 100%;
+    top: 0;
+ }
+
+.header .menu .sub-menu-left{
+   top: 0;
+   left: auto;
+   right: 100%;
+}
+
+
+
+.header .menu li:hover > .sub-menu{
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+
+.header .menu .sub-menu a{
+    padding: 6px 24px;
+}
+
+.header .menu .sub-menu .dropdown > a{
+    padding-right: 34px;
+}
+
+.header .menu .sub-menu span{
+    background-image: linear-gradient(hsl(130, 89%, 49%),  hsl(116, 67%, 40%));
+    background-size: 0 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 0.5s ease;
+    color: green;
+}
+
+.header .menu .sub-menu li:hover  > a > span{ 
+    background-size: 100% 1px;
+}
+
+
+
+.header .menu .sub-menu i{
+    transform: rotate(-90deg);
+    right: 24px;
+}
+
+.header-right{
+    display: flex;
+}
+
+.header-right > *{
+    margin-left: 25px;
+}
+
+.header-right .icon-btn{
+    height: 40px;
+    width: 100px;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.header-right .icon-btn:hover{
+    background-color: rgb(169, 210, 169);
+    color: green;
+    font-weight: 500;
+}
+
+.header-right .open-menu-btn{
+    display: none;
+}
+
+
+
+/* ------------Hero 1 container----------------- */
+
 .hero1container{
-    width: 70%;
+    width: 100%;
     /* height: 100vh; */
     margin: auto;
     justify-content: center;
-    padding-bottom: 3rem;
-    /* background-image: url(Images/pic1.jpg);
+    padding: 2rem 0;
+    /* background-image: url(Images/pic1.jpg); */
     background-size: cover;
     background-position: center;
-    padding-top: 1rem;
-    animation: change 50s infinite ease-in-out; */
+    background-repeat: no-repeat;
+    animation: change 50s infinite ease-in-out;
 }
 
 .contwrap{
@@ -232,7 +215,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 7rem;
   
 }
 
@@ -242,7 +225,7 @@
   color:  white;
   font-weight: 800;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
 }
 
 /* .contwrap h3{
@@ -256,7 +239,7 @@
 } */
 
 .contwrap p{
-    width: 100%;
+    width: 70%;
     font-size: 1.3rem;
     color: white;
     font-family: cursive;
@@ -264,35 +247,56 @@
     line-height: 2.5rem;
     text-align: center;
     letter-spacing: 0.1rem;
+    margin-top: 3rem;
 }
 
-.btnhero1{
+.search{
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
+    margin: 4rem 0;
 }
 
-.btnhero1 button{
-    width: 15rem;
-    padding: 0.5rem;
+.search input{
+    width: 24rem;
+    height: 60px;
     background-color: green;
     color: white;
     font-size: 1.2rem;
     font-weight: 500;
+    text-align: left;
     border: none;
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    border-radius: 1rem;
+    border-radius: 20px 0px  0px 20px;
     font-family: 'poppins';
-    margin-top: 2rem;
+    outline: none;
+    border: none;
+    padding: 0 20px;
+    /* margin-top: 2rem; */
 }
 
-.btnhero1 button a{
-  text-decoration: none;
-  color: white;
+input[type="text"]::placeholder {
+  color:white; 
+}
+
+.search button {
+  width: 6rem;
+  height: 60px;
+  color:green;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
   font-family: poppins;
+  border: none;
+  outline: none;
+  margin-left: -1;
+  text-align: center;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.search button:hover {
+  background: linear-gradient( 65deg, green, yellow);
+  transition: 50s;
 }
  
 
@@ -301,96 +305,66 @@
     transition: 50s;
 }
 
-@keyframes change {
+ @keyframes change {
     0%
     {
-        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Images/NIS_SEC.png);
-    }
-    40%
-    {
-        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Images/pic2.png);
-    }
-    60%
-    {
-        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Images/pic8.jpg);
-    }
-    100%
-    {
-        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Images/pic9.jpeg);
-    }
-   40%
-    {
-        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Images/pic6.avif);
+        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Images/nisbuilding.png);
     }
     50%
     {
-        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Images/pic7.avif);
-    }
-    60%
-    {
-        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Images/pic8.jpg);
-    }
-    70%
-    {
-        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Images/pic9.jpg);
-    }
-    80%
-    {
-        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Images/pic10.jpg);
-    }
-    90%
-    {
-        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Images/pic11.jpg);
+        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Images/totalstation.png);
     }
     100%
     {
-        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Images/pic1.jpg);
-    } 
-}
+        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Images/ogun6.png);
+    }
+   
+} 
 
-
+/* ------------Hero 2 container----------------- */
 /* HERO2 BEGINS */
 .Hero2{
     width: 100%;
-    /* height: 100vh; */
-    background: linear-gradient(65deg, white, rgb(180, 172, 172));
-    display: flex;
     margin: auto;
-    padding: 4rem 1rem;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(65deg, white, rgb(180, 172, 172));
+     
    
 }
 
 .imageside{
     width: 40%; 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center; 
 }
 
 .imageside img{
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: auto;
     margin: auto;
     align-items: center;
-    text-align: center;
-    margin-top: 1.35rem;
-    margin-left: 5.4rem;
     border-radius: 1.25rem;
+    /* text-align: center; */
     
 }
 
 .imageside h2{
     font-size: 1.25rem;
     color: black;
+    margin: auto;
+    width: 80%;
+    font-family: 'poppins';
+    font-weight: 600;
     text-align: center;
     align-items: center;
-    margin: auto;
-    padding: 0.4rem;
-    margin-top: 0.625rem;
-    font-weight: 600;
-    font-family: 'poppins';
+    /* padding: 0.4rem; */
+    /* margin-top: 0.625rem; */
     /* margin-left: 3rem; */
-    border: 1px solid rgb(52, 172, 96);
-    width: fit-content;
 }
 
 
@@ -410,22 +384,22 @@
 
 hr{
     width: 90%;
+    border: 1px solid greenyellow;
     /* margin-top: 0.4rem;
     margin-bottom: 0.2rem; */
-    border: 1px solid greenyellow;
 }
 
 .textside p{
-    width: 90%;
+    width: 100%;
     font-size: 1.25rem;
     color: black;
     text-align: left;
-    justify-content: center;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
-    line-height: 2.19rem;
+    line-height: 2.5rem;
+    /* justify-content: center; */
+    /* margin-top: 0.5rem; */
+    /* margin-bottom: 1rem; */
 }
 
 .textside button{
@@ -462,7 +436,7 @@ hr{
     letter-spacing: 0.2rem;
 }
 
-
+/* ------------Hero 3 container----------------- */
 /* HERO3 BEGINS */
 
 .Hero3{
@@ -603,6 +577,7 @@ hr{
     letter-spacing: 0.3rem;
 }
 
+/* ------------Hero 4 container----------------- */
 /* HERO4 BEGINS */
 .Hero4{
     width: 100%;
@@ -641,8 +616,7 @@ hr{
 } 
 .row{
     width: 37.5rem;
-    height: 12.5rem;
-   
+    height: 12.5rem; 
 }
 
 .row h2{
@@ -688,6 +662,8 @@ hr{
     justify-content: center;
 } 
 
+
+/* ------------Hero 5 container----------------- */
 /* HERO5  BEGINS */
 
 .hero5{
@@ -801,7 +777,7 @@ hr{
 }
 
 
-
+/* ------------Hero 6 container----------------- */
 /* HERO6  BEGINS */
 
 .Hero6{
@@ -889,6 +865,8 @@ hr{
     transition: 5s;
 }
 
+
+/* ------------Hero 7 container----------------- */
 /* HERO7  BEGINS */
 
  .hero7{
@@ -1001,11 +979,11 @@ hr{
     transition: 5s;
 }
 
-
+/* ------------Hero 8 container----------------- */
 /* HERO8 BEGINS */
 
 .hero8{
-    width: 90%;
+    width: 100%;
     /* height: 100vh; */
     margin: auto;
     justify-content: center;
@@ -1013,13 +991,7 @@ hr{
     background: linear-gradient(rgba(255, 255, 255, 0.416), rgba(0, 0, 0, 0.389)),url(Images/background.jpg);
     background-position: center;
     background-size: cover;
-    padding: 3rem 0;
-    /* overflow-x: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    background-blend-mode: screen;
-    padding-right: 0.5rem; */ 
+    padding: 1.5rem 2rem;
   }
   
   
@@ -1029,32 +1001,71 @@ hr{
   font-weight: 700;
   line-height: 3.563rem;
   text-align: center;
-  color: rgb(69, 4, 69);
+  color: rgb(6, 68, 6);
   }
   
   .hero8 h4{
   font-family: 'Roboto';
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   line-height: 2rem;
   text-align: center;
   width: 35%;
   margin: auto;
-  padding: 2rem 0;
-  color: rgb(69, 4, 69);
+  padding: 1rem 0;
+  color: rgb(3, 107, 17);
   }
   
   .sidez{
-    width: 70%;
+    width: 90%;
     margin: auto;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
   }
-  
-  .formside{
+
+  .contactside{
+    width: 40%;
+  }
+  .mapside {
+    width: 60%;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.light-mode iframe {
+    filter: none;
+}
+
+.dark-mode iframe {
+    filter: invert(100%);
+}
+
+  iframe{
+    width: 100%;
+    height: 500px;
+    border-radius: 0px 0px 14px 1px;
+    border: none;
+    outline: none;
+  }
+
+#toggleMode{
+  width: 100%;
+  height: 20px;
+  border-radius: 14px 14px 0px 0px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: yellowgreen;
+  color: white;
+  font-weight: 800;
+}
+  /* .formside{
     width:21.875rem;
     height: 28.75rem;
     justify-content: center;
@@ -1063,23 +1074,18 @@ hr{
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     background: url(Images/background.jpg);
     border-radius: 1.3rem;
-  }
-  
-  /* .formside p{
-    color: green;
-    font-size: 1rem;
-    font-weight: 700;
-    margin-left: 1.3rem;
   } */
+  
+  
   input::placeholder,
   textarea::placeholder{
-    color: black;
+    color: white;
     font-weight: 700;
     font-size: 1.1rem;
     font-family: 'Roboto';
     text-align: left;
   }
-  .formside input{
+  /* .formside input{
     width:100%;
     border-radius: 1rem;
     margin-bottom: 1rem;
@@ -1093,14 +1099,13 @@ hr{
     background: transparent;
     color: black;
     padding: 1rem;
-  }
+  } */
   
-  .formside input:hover{
+  /* .formside input:hover{
   border: 3px solid #d77171
+  } */
   
-  }
-  
-  .formside textarea{
+  /* .formside textarea{
     width: 19.375rem;
     height: 10rem;
     padding: 1rem;
@@ -1112,13 +1117,13 @@ hr{
     color: black;
     font-weight: 700;
     font-size: 1.3rem;
-  }
+  } */
   
-  .formside textarea:hover{
+  /* .formside textarea:hover{
     border: 3px solid #d77171;
-  }
+  } */
   
-  .formside button{
+  /* .formside button{
     width: 15.625rem;
     height: 3.125rem;
     border-radius: 2.3rem;
@@ -1133,12 +1138,12 @@ hr{
     display: flex;
     margin: 1rem 1rem;
     justify-content: center;
-  }
+  } */
   
-  .formside button:hover{
+  /* .formside button:hover{
     color: purple;
     border-color: purple;
-  }
+  } */
   
   .rew1{
     display: flex;
@@ -1150,11 +1155,11 @@ hr{
   }
   
   .rew1 h5{
-    width: 70%;
+    width: 100%;
     font-family: 'Roboto';
     font-size: 1rem;
     font-weight: 700;
-    line-height: 1.2rem;
+    line-height: 2rem;
     text-align: left;
     color: black;
   }
@@ -1179,83 +1184,79 @@ hr{
 
 
 
- 
+ /* ------------Hero 9 foooter container----------------- */
 /* FOOTER  BEGINS */
 
 .footer{
     width: 100%;
+    padding: 0.5rem 0.5rem;
+    margin: auto;
     display: flex;
-    /* overflow-x: hidden; */
     flex-direction: row;
     justify-content: space-between;
-    justify-items: center;
-    margin: auto;
-    padding: 2rem 3rem;
     background: linear-gradient(60deg, rgb(5, 84, 5),rgb(13, 139, 67), rgb(2, 90, 2));
-    background-position: center;
+    /* overflow-x: hidden; */
+    /* justify-items: center; */
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain; */
   
   }
 
-  
-  .CompLogo img{
-    width: 80%;
-    margin-left: -1rem;
-  
+  .CompLogo{
+    width: 15%;
   }
-  
-  .CompLogo h3{
-    font-family: 'Roboto';
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.3rem;
-    text-align: left;
-    color: white;
-    width: 90%;
-  }
-  .Getintouch{
-    /* margin: auto; */
-    text-align: left;
-    margin-left: 6rem;
-  
-  }
-  
-  .Getintouch h2{
-    font-family: 'Roboto';
-    font-size: 1.2rem;
-    font-weight: 700;
-    line-height: 1.2rem;
-    color: white;
-    padding-bottom: 1.5rem;
-    
-  }
-  
-  .Getintouch h3{
-    font-family: 'Roboto';
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.3rem;
-    color: white;
-    width: 75%;
-    padding-bottom: 1rem;
-  }
-  
+
   .Quicklinks{
+    width: 10%;
     /* margin: auto; */
     text-align: left;
     margin-left: 2rem;
   }
+
+  .Getintouch{
+    width: 25%;
+     /* margin: auto; */
+     text-align: left;
+     margin-left: 2rem;
+  }
+  .SocialMedia{
+    width: 10%;
+    text-align: left;
+    /* margin: auto; */
+    /* margin-right: 4rem; */
+  }
+
+  .Newsletter{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .CompLogo img{
+    width: 70%;
+    /* margin-left: -1rem; */
+  }
+  .CompLogo h3{
+    width: 100%;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2rem;
+    text-align: left;
+    color: white;
+  }
+
   .Quicklinks h2{
     font-family: 'Roboto';
     font-size: 1.2rem;
-    font-weight: 700;
-    line-height: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5rem;
     text-align: left;
     color: white;
     padding-bottom: 1.5rem;
-    /* width: 70%; */
-    
+    width: 100%;
   }
   
   .Quicklinks ul{
@@ -1282,22 +1283,35 @@ hr{
     color: greenyellow;
   }
   
-  .SocialMedia{
-    /* margin: auto; */
-    text-align: left;
-    margin-right: 4rem;
-  }
-  .SocialMedia h2{
+  .Getintouch h2{
     font-family: 'Roboto';
     font-size: 1.2rem;
-    font-weight: 700;
-    line-height: 1.3rem;
-    text-align: left;
+    font-weight: 500;
+    line-height: 1.5rem;
     color: white;
     padding-bottom: 1.5rem;
     width: 100%;
   }
   
+  .Getintouch h3{
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: white;
+    width: 90%;
+    padding-bottom: 1rem;
+  }
+  .SocialMedia h2{
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: left;
+    color: white;
+    padding-bottom: 1.5rem;
+    width: 100%;
+  }
   
   .socialMediaIcons ul{
     list-style: none;
@@ -1307,7 +1321,7 @@ hr{
     font-family: 'Roboto';
     font-size: 1rem;
     font-weight: 500;
-    line-height: 1.3rem;
+    line-height: 1.4rem;
     text-align: left;
     color: white;
     width: 100%;
@@ -1323,25 +1337,20 @@ hr{
     color: greenyellow;
   }
 
-  .Newsletter{
-    display: flex;
-    flex-direction: column;
-  }
-  
   .Newsletter h2{
     font-family: 'Roboto';
-    font-size: 1.1rem;
-    font-weight: 700;
-    line-height: 1.3rem;
-    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* line-height: 1.5rem; */
+    /* text-align: center; */
     color: white;
     padding-bottom: 1.5rem;
-    width: 100%;
+    /* width: 100%; */
   }
   
-  .Newsletter input{
-    width: 20.625rem;
-    height: 3rem;
+  .Newsletter .forms input{
+    width: 20rem;
+    height: 50px;
     border-radius: 0.2rem;
     text-align: left;
     font-family: 'Roboto';
@@ -1349,18 +1358,18 @@ hr{
     font-size: 1.3rem;
     font-weight: 500;
     color: black;
-    background: white;
+    background: rgb(156, 151, 151);
     border: none;
     display: flex;
     margin-bottom: 1rem;
-    justify-content: left;
+    /* justify-content: left; */
     outline: none;
   }
   
-  .Newsletter button{
+  .Newsletter .forms button{
     /* padding: .5rem 4rem; */
-    width: 20.625rem;
-    height: 3rem;
+    width: 20rem;
+    height: 50px;
     border-radius: 0.2rem;
     text-align: center;
     font-family: 'Roboto';
@@ -1442,7 +1451,7 @@ hr{
   /* MISSION AND VISSION INDEX */
 
 
-  .headerbar_containermission{
+  .containermission{
     width: 100%;
     /* height: 70vh; */
     margin: auto;
@@ -1457,7 +1466,7 @@ hr{
     font-size: 50px;
     color: white;
     text-align: left;
-    margin-top: 350px;
+    padding-top: 500px;
     font-weight: 700;
     font-family: 'poppin';
     margin-left: 2rem;
@@ -1565,7 +1574,7 @@ width: 90%;
 
 /* THE EXECUTIVES */
 
-.headerbar_containerexecutives{
+.containerexecutives{
   width: 100%;
   /* height: 70vh; */
   margin: auto;
@@ -1581,7 +1590,7 @@ width: 90%;
   font-size: 40px;
   color: white;
   text-align: left;
-  margin-top: 380px;
+  padding-top: 450px;
   font-weight: 700;
   font-family: 'poppin';
   margin-left: 2rem;
@@ -1593,6 +1602,7 @@ width: 90%;
   width: 100%;
   margin-bottom: 100px;
   justify-content: center;
+  align-items: center;
   margin: auto;
 }
 
@@ -1649,7 +1659,7 @@ width: 90%;
 }
 
 .committee{
-  width: 80%;
+  width: 90%;
   justify-content: center;
   margin: auto;
   background: #d5dbdb;
@@ -1779,7 +1789,7 @@ margin: auto;
   
   
 /* CONSTITUTION */
-.headerbar_containerconstitution{
+.containerconstitution{
   width: 100%;
   /* height: 70vh; */
   margin: auto;
@@ -1794,7 +1804,7 @@ margin: auto;
   font-size: 50px;
   color: white;
   text-align: left;
-  margin-top: 350px;
+  padding-top: 450px;
   font-weight: 700;
   font-family: 'poppin';
   margin-left: 2rem;
@@ -1877,7 +1887,7 @@ width: 100%;
 
 /* CHAIRMAN FOREWORD */
 
-.headerbar_containerfore{
+.containerfore{
   width: 100%;
   /* height: 70vh; */
   margin: auto;
@@ -1888,11 +1898,11 @@ width: 100%;
 }
 
 .containerfore h1{
-  width: 50%;
+  width: 100%;
   font-size: 50px;
   color: white;
   text-align: left;
-  margin-top: 370px;
+  padding-top: 450px;
   font-weight: 800;
   font-family: 'poppin';
   margin-left: 5px;
@@ -1957,7 +1967,7 @@ width: 100%;
 
 /* PUBLICATION */
 
-.headerbar_containerpublic{
+.containerpublic{
   width: 100%;
   /* height: 70vh; */
   margin: auto;
@@ -1972,7 +1982,7 @@ width: 100%;
   font-size: 55px;
   color: white;
   text-align: left;
-  margin-top: 350px;
+  padding-top: 350px;
   font-weight: 800;
   font-family: 'poppin';
   margin-left: 2rem;
@@ -1990,19 +2000,15 @@ width: 100%;
 
 /* Membership */
 
-.headerbar_containermembership{
+.containermembership{
   width: 100%;
-  /* height: 80vh; */
   margin: auto;
   background-image:linear-gradient(rgba(0, 0, 0, 0.984), rgba(0, 0, 0, 0.923)), url(Images/membs.jpg);
   background-size: cover;
   background-blend-mode: screen;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.containermembership{
-  margin-left: 4rem;
+  padding-left: 4rem;
   padding-bottom: 3rem;
 }
 
@@ -2011,7 +2017,7 @@ width: 100%;
   font-size: 45px;
   color: white ;
   text-align: left;
-  margin-top: 180px;
+  padding-top: 180px;
   font-weight: 800;
   font-family: 'poppin';
   /* margin-left: 25px; */
@@ -2058,16 +2064,17 @@ width: 100%;
   color: white;
   background: linear-gradient( 65deg, yellow, green);
 }
-.containermembership h1{
+
+/* .containermembership h1{
   width: 50%;
   font-size: 55px;
   color: black;
   text-align: left;
-  /* margin-top: 450px; */
+  margin-top: 450px;
   font-weight: 800;
   font-family: poppin;
   margin-left: 5px;
-}
+} */
 
 
 .membership{
@@ -2085,7 +2092,7 @@ width: 100%;
 }
 .cads{
   width: 650px;
-  height: 320px;
+  height: auto;
   background: rgb(213, 227, 219);
   border: 3px solid white;
   border-radius: 10px;
@@ -2156,10 +2163,10 @@ width: 100%;
 /* sign up form */
 
 .signup{
-  width: 50%;
+  width: 70%;
   margin: auto;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   display: flex;
   flex-direction: column;
 
@@ -2213,7 +2220,7 @@ width: 100%;
 
 
 .signup input{
-  width: 400px;
+  width: 80%;
   height: 40px;
   padding: 10px;
   margin-bottom: 15px;
@@ -2234,7 +2241,7 @@ width: 100%;
 }
 
 .signup button{
-  width: 170px;
+  width: 40%;
   height: 50px;
   background: green;
   margin: auto;
@@ -2478,26 +2485,180 @@ width: 100%;
   color: green;
 }
 
-
-
-
-
-
-
-/* MEDIA QUERY SECTION */
+/*--------------MEDIA QUERY SECTION---------------------*/
 
 @media screen and (min-width: 360px) and (max-width: 480px){
-
-.hidemobileon{
-  display: none;
+/* ------------header panel---------------- */
+.header{
+    padding: 12px 0;
+}
+.header .menu{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(118, 52%, 71%);
+    padding: 15px 30px 30px;
+    overflow-y: auto;
+    z-index: 1;
+    transform: translateX(100%);
 }
 
-.logo img{
-  width: 55%;
+.header .menu.open{
+    transform: none;
 }
 
+.header .menu .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.header .menu .close-menu-btn{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.header .menu .close-menu-btn::before,
+.header .menu .close-menu-btn::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.header .menu .close-menu-btn::before{
+    transform: rotate(45deg);
+}
+
+.header .menu .close-menu-btn::after{
+    transform: rotate(-45deg);
+}
+
+.header .menu > ul > li{
+    display: block;
+}
+
+.header .menu > ul > li:not(:last-child){
+    margin-right: 0;
+}
+
+.header .menu li{
+    border-bottom: 1px solid hsl(0, 0%, 100%, 0.25);
+}
+
+.header .menu li:first-child{
+   border-top: 1px solid hsl(0, 0%, 100%, 0.25);
+}
+
+.header .menu > ul > li > a{
+  padding: 4px 0;
+}
+
+.header .menu > ul > .dropdown > a{
+    padding-right: 34px;
+}
+
+.header .menu i{
+    height: 34px;
+    width: 34px;
+    border: 1px solid hsl(0, 0%, 100%, 0.25);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+    cursor: pointer;
+    top: 7px;
+}
+
+.header .menu .dropdown.active > i{
+    background-color: hsla(0, 0%, 100%, 0.23);
+    transform: rotate(180deg);
+}
+
+.header .menu .sub-menu{
+    position: static;
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    padding: 0;
+    transition: none;
+    box-shadow: none;
+    width: 100%;
+    display: none;
+}
+.header .menu .dropdown.active > .sub-menu{
+    display: block;
+}
+.header .menu .sub-menu li:last-child{
+    border-bottom: none;
+ }
+
+ .header .menu .sub-menu a{
+   padding: 5px 0 5px 15px;
+ }
+
+ .header .menu .sub-menu .sub-menu a{
+   padding-left: 30px;
+ }
+
+ .header .menu .sub-menu .sub-menu .sub-menu a{
+    padding-left: 45px;
+  }
+
+   .header .menu .sub-menu span{
+    background-image: none;
+  }
+
+   .header .menu .sub-menu i{
+    transform: none;
+    right: 0;
+  }
+
+   .header-right .open-menu-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: relative;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .header-right .open-menu-btn .line{
+    height: 2px;
+    width: 30px;
+    background-color:white;
+    position: absolute;
+  }
+
+  .header-right .open-menu-btn .line-1{
+    transform: translateY(-8px);
+  }
+
+  .header-right .open-menu-btn .line-3{
+    transform: translateY(8px);
+  }
+
+
+
+  /* ------------hero 1---------------- */
 .hero1container{
-  width: 90%;
+  width: 100%;
   /* height: 100vh; */
   margin: auto;
   justify-content: center;
@@ -2507,9 +2668,10 @@ width: 100%;
 
 .contwrap{
   width: 100%;
+  padding: 0rem 0.5rem;
   /* margin: 0.5rem; */
   text-align: center;
-  margin-top: 0rem;
+  margin-top: 3rem;
   
 }
 
@@ -2518,25 +2680,46 @@ width: 100%;
   font-size: 1.5rem;
   line-height: 40px;
   font-weight: 700;
-  margin-bottom: 0rem;
-  margin: 2rem 0rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  /* margin: 2rem 0rem; */
 }
 
 .contwrap p{
-  width: 100%;
+  width: 90%;
+  margin: auto;
   font-size: 1.1rem;
   font-weight: 300;
-  text-align: left;
-  line-height: 1.5rem;
+  text-align: center;
+  line-height: 1.7rem;
   font-family: 'Roboto';
+  margin-bottom: 2rem;
   /* padding: 0.5rem; */
 }
 
-.btnhero1 button{
-  margin-top: 2rem;
+.search input{
+  width: 70%;
+  height: 50px;
+  padding: 0 10px;
 }
 
-/* hero2 */
+input[type="text"]::placeholder {
+color:white; 
+}
+
+.search button {
+width: 30%;
+height: 50px;
+
+}
+
+.search{
+width: 100%;
+margin: 2rem 0;
+}
+
+
+/* ------------hero 2---------------- */
 
 .Hero2{
   width: 100%;
@@ -2548,6 +2731,7 @@ width: 100%;
 
 .imageside{
   width: 100%; 
+  height: 100%;
   margin: auto;
   justify-content: center;
   align-items: center; 
@@ -2562,9 +2746,10 @@ width: 100%;
 }
 
 .imageside h2{
+  width: 100%;
   font-size: 1.2rem;
   margin: auto;
-  padding: 0.4rem;
+  padding: 0.2rem;
   margin-top: 0.2rem;
   font-weight: 600;
   margin-bottom: 2rem;
@@ -2612,14 +2797,14 @@ hr{
   border-radius: 4rem;
 }
 
-/* hero3 */
+/* ------------hero 3---------------- */
 
 
 /* no code here */
 
 
 
-/* hero4 */
+/* ------------hero 4---------------- */
 
 .Hero4{
   width: 100%;
@@ -2672,7 +2857,7 @@ hr{
   width: 40%;
 }
 
-/* hero5 */
+/* ------------hero 5---------------- */
 
 .hero5{
   width: 100%;
@@ -2731,7 +2916,7 @@ margin-top: 0.8rem;
 
 
 
-/* hero6 */
+/* ------------hero 6---------------- */
 
 .Hero6{
   width: 100%;
@@ -2768,7 +2953,7 @@ margin-top: 0.8rem;
 }
 
 
-/* hero7 */
+/* ------------hero 7---------------- */
 
 .hero7{
   width: 100%;
@@ -2826,13 +3011,14 @@ margin-top: 0.8rem;
   align-items: center;
 }
 
-/* hero8 */
+/* ------------hero 8---------------- */
 .hero8{
   width: 100%;
   /* height: 130vh; */
   margin: auto;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(Images/background.jpg);
   background-size: contain;
+  padding: .5rem .5rem;
 }
 
 .hero8 h2{
@@ -2841,21 +3027,26 @@ margin-top: 0.8rem;
   
   .hero8 h4{
   color: greenyellow;
+  width: 100%;
   }
 
 .hero8 h4{
   font-size: 1.5rem;
-  width: 90%;
+  width: 100%;
   }
 
   .sidez{
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: block;
   }
 
-  .formside{
-    margin-bottom: 3rem;
+  .mapside{
+    width: 100%;
+  }
+
+  .contactside{
+    width: 100%;
   }
 
   .rew1{
@@ -2865,7 +3056,8 @@ margin-top: 0.8rem;
 
   .rew2{
     width: 100%;
-    gap: 1rem;
+    justify-content: space-between;
+    padding: 2rem;
     }
 
   .rew1 h5{
@@ -2887,23 +3079,35 @@ margin-top: 0.8rem;
 .footer{
   width: 100%;
   display: block;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1rem;
+}
+.CompLogo{
+  width: 70%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  
+
 }
 .CompLogo img{
-  width: 20%;
+  width: 80%;
   align-items: center;
-  margin-left: 0.1rem;
+  margin: auto;
+  /* margin-left: 0.1rem; */
 }
 .CompLogo h3{
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 450;
-  line-height: 2rem;
+  line-height: 1.5rem;
   align-items: center;
   text-align: center;
   width: 100%;
   margin: auto;
   margin-bottom: 2rem;
 }
+
+
 .Quicklinks{
   text-align: left;
   margin-left: 0rem;
@@ -2912,70 +3116,75 @@ margin-top: 0.8rem;
 }
 
 .Quicklinks h2{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
 }
 
 .Quicklinks ul li{
-  font-size: 1.3rem;
+  font-size: 0.95rem;
 }
 
 .Getintouch{
+  width: 100%;
   margin: auto;
   margin-left: 0rem;
-  width: 100%;
   margin-bottom: 2rem;
 }
 .Getintouch h2{
-  font-size: 1.5rem; 
+  font-size: 1.2rem; 
+  padding-bottom: .5rem;
   
 }
 .Getintouch h3{
-  font-size: 1.3rem;
+  font-size: 0.95rem;
   width: 100%;
-  line-height: 35px;
+  line-height: 1.5rem;
 
 }
 
 .SocialMedia{
+  width: 100%;
   text-align: left;
   margin-right: 0rem;
-  width: 100%;
   margin-bottom: 2rem;
 }
 .SocialMedia h2{
-  font-size: 1.6rem;
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
 }
 .socialMediaIcons ul li{
-  font-size: 1.3rem;
+  font-size: 0.9rem;
 }
 
 .Newsletter{
   width: 100%;
-  margin: auto;
-  display: block;
-  justify-content: left;
+  /* margin: auto; */
+  /* display: block; */
+  /* justify-content: left; */
   /* align-items: center; */
 }
 
 .Newsletter h2{
   width: 100%;
   font-family: 'Roboto';
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 500;
   line-height: 1.3rem;
   text-align: left;
   color: white;
   padding-bottom: 1.5rem;
 }
 
-.Newsletter input{
-  width: 22rem;
+.Newsletter .forms input{
+  width: 100%;
+  /* justify-content: left; */
+
 }
 
-.Newsletter button{
+.Newsletter .forms button{
   /* padding: .5rem 4rem; */
-  width: 22rem;
-  height: 3rem;
+  width: 100%;
+  /* height: 3rem; */
 } 
 
 .Copyright{
@@ -3009,8 +3218,11 @@ margin-top: 0.8rem;
 
 /* MISSION AND VISSION INDEX */
 
-.headerbar_containermission{
+.containermission{
+  background-color: green;
+  background-image: none;
   background-size: cover;
+  /* margin: 0rem 0.5rem; */
 }
 
 .containermission h1{
@@ -3018,6 +3230,8 @@ margin-top: 0.8rem;
   font-size: 40px;
   font-weight: 600;
   margin-left: 0.5rem;
+  padding-top: 100px;
+  text-align: center;
 }
 
 .missionandvission{
@@ -3032,7 +3246,7 @@ margin-top: 0.8rem;
   display: block;
   padding: 0rem 0.5rem;
   margin-bottom: 30px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .image{
@@ -3098,9 +3312,10 @@ margin-top: 0.8rem;
 
     /* <!-- The Executives --> */
 
-    .headerbar_containerexecutives{
+    .containerexecutives{
       width: 100%;
       /* height: 60vh; */
+      background: green;
     }
 
     .containerexecutives h1{
@@ -3108,7 +3323,8 @@ margin-top: 0.8rem;
       font-size: 30px;
       color: white;
       text-align: center;
-      margin-top: 330px;
+      padding-top: 100px;
+      padding-bottom: 0.5rem;
       font-weight: 700;
       font-family: poppin;
       margin-left: 0.1rem;
@@ -3202,7 +3418,7 @@ margin-top: 0.8rem;
   width: 100%;
   font-size: 40px;
   text-align: center;
-  margin-top: 350px;
+  padding-top: 350px;
   margin-left: 0rem;
 }
 .constitution{
@@ -3210,7 +3426,7 @@ margin-top: 0.8rem;
   /* height: 130vh; */
   margin: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   padding: 2rem 0.5rem;
   gap: 0rem;
@@ -3245,14 +3461,22 @@ margin-top: 0.8rem;
 
 /* CHAIRMAN FOREWORD */
 
+.containerfore{
+  width: 100%;
+  background-image:none; 
+  background-color: green;
+}
+
 .containerfore h1{
   width: 100%;
   font-size: 40px;
   text-align: center;
-  margin-top: 370px;
+  padding-top: 100px;
   margin-left: 0px;
   font-weight: 700;
   margin-left: 0px;
+  margin: auto;
+  padding-bottom: 0rem;
 }
 
 .chairfore{
@@ -3264,7 +3488,9 @@ margin-top: 0.8rem;
 }
 .imagezide img{
   width: 100%;
-  height: 550px;
+  height: auto;
+  margin: auto;
+  padding: 0.5rem;
   margin-top: 0px;
 }
 
@@ -3293,12 +3519,18 @@ margin-top: 0.8rem;
 
 
 /* PUBLICATION */
-
+.containerpublic{
+  width: 100%;
+  margin: auto;
+  background-image:none;
+  background-color: green
+}
 .containerpublic h1{
   width: 100%;
+  font-size: 35px;
   text-align: center;
   margin: auto;
-  margin-top: 380px;
+  padding-top: 90px;
 }
 
 .publication{
@@ -3324,22 +3556,21 @@ margin-top: 0.8rem;
 
 
 /* Membership */
-.headerbar_containermembership{
+.containermembership{
   width: 100%;
-  /* height: 110vh; */
+  padding-left: 0.5rem;
+  padding-bottom: 3rem;
 }
 
-.containermembership{
-  margin-left: 0rem;
-  /* padding: 0.5rem; */
-}
 .containermembership h2{
-  font-size: 42px;
-  text-align: left;
-  margin-top: 140px;
+  font-size: 35px;
+  color: white ;
+  text-align: center;
+  padding-top: 100px;
   font-weight: 600;
+  font-family: 'poppin';
+  /* margin-left: 25px; */
   width: 100%;
-  padding: 0.5rem;
 }
 
 .containermembership p{
@@ -3375,7 +3606,1063 @@ margin-top: 0.8rem;
 }
 .cads{
   width: 95%;
-  height: 400px;
+  height: auto;
+  padding: 10px;
+  margin: 2rem 0.5rem;
+  align-items: center; 
+}
+
+.cads p{
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 30px;
+  width: 100%;
+}
+
+.cads button{
+  padding: 10px;
+  width: 300px;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: Roboto;
+}
+
+
+.cads a{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+
+/* sign up form */
+.signup{
+  width: 100%;
+  padding: 10px;
+}
+.signup input{
+  width: 100%;
+  font-size: 20px;
+}
+
+
+.signup h2{
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+.signup h1{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.agree{
+  font-size: 23px;
+  width: 100%;
+}
+.signup button{
+  width: 100%;
+  font-size: 25px;
+  
+}
+
+/* sign in form */
+
+
+.signin{
+  width: 70%;
+}
+.box{
+  width: 70%;
+}
+.btn button{
+  width: 70%;
+}
+.signin h2{
+  text-align: center;
+}
+.inputbox{
+  position: relative;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.signin p{
+  width: 100%;
+  font-size: 20px; 
+}
+.links{
+  display: flex;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  justify-content: space-between;
+  
+}
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+ /* ------------hero 1---------------- */
+  .header{
+    padding: 12px 0;
+}
+.header .menu{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(118, 52%, 71%);
+    padding: 15px 30px 30px;
+    overflow-y: auto;
+    z-index: 1;
+    transform: translateX(100%);
+}
+
+.header .menu.open{
+    transform: none;
+}
+
+.header .menu .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.header .menu .close-menu-btn{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.header .menu .close-menu-btn::before,
+.header .menu .close-menu-btn::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.header .menu .close-menu-btn::before{
+    transform: rotate(45deg);
+}
+
+.header .menu .close-menu-btn::after{
+    transform: rotate(-45deg);
+}
+
+.header .menu > ul > li{
+    display: block;
+}
+
+.header .menu > ul > li:not(:last-child){
+    margin-right: 0;
+}
+
+.header .menu li{
+    border-bottom: 1px solid hsl(0, 0%, 100%, 0.25);
+}
+
+.header .menu li:first-child{
+   border-top: 1px solid hsl(0, 0%, 100%, 0.25);
+}
+
+.header .menu > ul > li > a{
+  padding: 4px 0;
+}
+
+.header .menu > ul > .dropdown > a{
+    padding-right: 34px;
+}
+
+.header .menu i{
+    height: 34px;
+    width: 34px;
+    border: 1px solid hsl(0, 0%, 100%, 0.25);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+    cursor: pointer;
+    top: 7px;
+}
+
+.header .menu .dropdown.active > i{
+    background-color: hsla(0, 0%, 100%, 0.23);
+    transform: rotate(180deg);
+}
+
+.header .menu .sub-menu{
+    position: static;
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    padding: 0;
+    transition: none;
+    box-shadow: none;
+    width: 100%;
+    display: none;
+}
+.header .menu .dropdown.active > .sub-menu{
+    display: block;
+}
+.header .menu .sub-menu li:last-child{
+    border-bottom: none;
+ }
+
+ .header .menu .sub-menu a{
+   padding: 5px 0 5px 15px;
+ }
+
+ .header .menu .sub-menu .sub-menu a{
+   padding-left: 30px;
+ }
+
+ .header .menu .sub-menu .sub-menu .sub-menu a{
+    padding-left: 45px;
+  }
+
+   .header .menu .sub-menu span{
+    background-image: none;
+  }
+
+   .header .menu .sub-menu i{
+    transform: none;
+    right: 0;
+  }
+
+   .header-right .open-menu-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: relative;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .header-right .open-menu-btn .line{
+    height: 2px;
+    width: 30px;
+    background-color:white;
+    position: absolute;
+  }
+
+  .header-right .open-menu-btn .line-1{
+    transform: translateY(-8px);
+  }
+
+  .header-right .open-menu-btn .line-3{
+    transform: translateY(8px);
+  }
+
+  /* ------------hero 1---------------- */
+  .contwrap{
+    width: 90%;
+    margin-top: 7rem;
+  }
+  .contwrap h1{
+    font-size: 1.8rem;
+    color:  white;
+    font-weight: 600;
+    margin-bottom: 8rem;
+    text-align: center;
+  }
+
+  .contwrap p{
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.search{ 
+  margin: 2rem 0;
+}
+
+/* ------------Hero 2 container----------------- */
+.Hero2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4rem;
+  justify-content: center;
+}
+.imageside{
+  width: 80%; 
+}
+.imageside img{
+  width: 100%;
+  height: auto; 
+}
+.imageside h2{
+  width: 100%;
+}
+.textside{
+  width: 100%;
+}
+.textside h2{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+hr{
+  width: 100%;
+  border: 1px solid greenyellow;
+}
+
+/* ------------Hero 4 container----------------- */
+.Hero4{
+  width: 100%;
+  padding: 1rem 0.5rem;
+}
+
+.Hero4 h1{
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 0.625rem;
+}
+.Hero4 h2{
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.row1{
+  display: block;
+  gap: 0.1rem;
+  margin-top: 1rem;
+  
+} 
+
+.row2{
+  display: block;
+  gap: 0.875rem;
+} 
+
+.row h2{
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 0.9rem;
+  font-weight: 500;
+}
+
+.rowinner img{
+  width: 15%;
+  height: 15%;
+}
+
+.row{
+ margin-bottom: 2rem;
+ width: 100%;
+ height: auto; 
+}
+
+.rowinner p{
+  font-size: 1.2rem;
+  text-align: left;
+  font-weight: 300;
+  width: 100%;
+}
+
+/* ------------Hero 5 container----------------- */
+.cadre .row1{
+  display: block;
+  margin-top: 1.5rem;
+} 
+
+.cadre .row2{
+  display: block;
+  margin-top: 1.5rem;
+  }
+
+  .member{
+    margin-top: 2rem;
+  }
+
+  /* ------------Hero 6 container----------------- */
+  .Hero6{
+    width: 100%;
+    padding: 2rem 0.5rem;
+    /* height: 80vh; */
+  }
+  
+  .sides{
+    width: 90%;
+    /* height: 38rem; */
+    height: auto;
+    display: block;
+    padding: 2rem 1rem;
+  }
+  
+  .Hero6 h1{
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .posterside{
+    width: 100%;
+  }
+  .posterside img{
+    width: 100%;
+    height: 100%;
+  }
+  .regside{
+    width: 100%;
+  }
+  
+  .regside h2{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+    /* ------------Hero 7 container----------------- */
+    .hero7{
+      width: 70%;
+      /* height: 250vh; */
+      padding: 1rem 0.2rem; 
+      margin: auto;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .hero7 h2{
+      width: 100%;
+      text-align: center;
+    }
+    
+    
+    .pubcards{
+      width: 100%;
+      /* height: 450px; */
+      height: auto;
+      display: block;
+      margin: auto;
+      align-items: center;
+    }
+    
+    .cardwrap{
+      width: 22rem;
+      height: 26rem;
+      margin-right: 0rem;
+      box-shadow: none;
+      margin-bottom: 2rem;
+      margin: auto;
+      align-items: center;
+    }
+    
+    .carding{
+      width: 22rem;
+      height: 22rem;
+      background: rgb(219, 192, 143);
+    }
+    
+    .sub{
+      width: 22rem;
+      height: 4rem;
+      margin-bottom: 2rem;
+    }
+    
+    .hero7 button{
+      width: 100%;
+      height: 3.125rem;
+      margin: auto;
+      border-radius: 0.625rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 0.5rem;
+      align-items: center;
+      justify-content: center;
+    }
+    
+/* ------------Hero 8 container----------------- */
+.hero8{
+  width: 100%;
+  /* height: 130vh; */
+  margin: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(Images/background.jpg);
+  background-size: contain;
+  padding: .5rem .5rem;
+}
+
+.hero8 h2{
+  color: greenyellow;
+  }
+  
+  .hero8 h4{
+  color: greenyellow;
+  width: 100%;
+  }
+
+.hero8 h4{
+  font-size: 1.5rem;
+  width: 100%;
+  }
+
+  .sidez{
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  .mapside{
+    width: 100%;
+  }
+
+  .contactside{
+    width: 100%;
+  }
+
+  .rew1{
+  width: 100%;
+  gap: 1rem;
+  }
+
+  .rew2{
+    width: 50%;
+    justify-content: space-between;
+    padding: 2rem;
+    }
+
+  .rew1 h5{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2rem;
+    text-align: left;
+    color: white;
+  }
+
+  .rew2 img{
+    width: 8%;
+    height: 8%;
+  }
+
+/* ------------Hero 9  Footer container----------------- */
+.footer{
+  width: 100%;
+  display: block;
+  padding: 1rem 1rem;
+}
+.CompLogo{
+  width: 70%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  
+
+}
+.CompLogo img{
+  width: 80%;
+  align-items: center;
+  margin: auto;
+  /* margin-left: 0.1rem; */
+}
+.CompLogo h3{
+  font-size: 1rem;
+  font-weight: 450;
+  line-height: 1.5rem;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+
+.Quicklinks{
+  text-align: left;
+  margin-left: 0rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.Quicklinks h2{
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
+}
+
+.Quicklinks ul li{
+  font-size: 0.95rem;
+}
+
+.Getintouch{
+  width: 100%;
+  margin: auto;
+  margin-left: 0rem;
+  margin-bottom: 2rem;
+}
+.Getintouch h2{
+  font-size: 1.2rem; 
+  padding-bottom: .5rem;
+  
+}
+.Getintouch h3{
+  font-size: 0.95rem;
+  width: 100%;
+  line-height: 1.5rem;
+
+}
+
+.SocialMedia{
+  width: 100%;
+  text-align: left;
+  margin-right: 0rem;
+  margin-bottom: 2rem;
+}
+.SocialMedia h2{
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
+}
+.socialMediaIcons ul li{
+  font-size: 0.9rem;
+}
+
+.Newsletter{
+  width: 100%;
+  /* margin: auto; */
+  /* display: block; */
+  /* justify-content: left; */
+  /* align-items: center; */
+}
+
+.Newsletter h2{
+  width: 100%;
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+  text-align: left;
+  color: white;
+  padding-bottom: 1.5rem;
+}
+
+.Newsletter .forms input{
+  width: 100%;
+  /* justify-content: left; */
+
+}
+
+.Newsletter .forms button{
+  /* padding: .5rem 4rem; */
+  width: 100%;
+  /* height: 3rem; */
+} 
+
+.Copyright{
+  width: 100%;
+  margin: auto;
+  padding: .5rem 1rem;
+
+}
+
+.Copyright p{
+  font-family: 'Roboto';
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+  color:white;
+  width: 100%;
+}
+/* ------------mission and vission----------------- */
+.containermission{
+  background-color: green;
+  background-image: none;
+  background-size: cover;
+  /* margin: 0rem 0.5rem; */
+}
+.containermission h1{
+  width: 100%;
+  /* padding-bottom: 50px; */
+  font-size: 35px;
+  padding-top: 100px;
+}
+
+.missionandvission{
+  width: 100%;
+  /* height: 100vh; */
+  margin: auto;
+}
+
+.mission{
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: 0rem 0.5rem;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+.image{
+  width: 100%;
+  padding: 0.5rem;
+}
+.image img{
+  width: 100%;
+  height: 100%;
+}
+
+.missiontext{
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.missiontext h3{
+  font-family: 'poppin';
+  font-size:40px;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+.missiontext p{
+ font-size: 26px;
+ font-weight: 400;
+ text-align: left;
+ width: 100%;
+ line-height: 40px;
+}
+
+.vission{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0rem 0.5rem;
+  margin-bottom: 0px;
+}
+
+
+.vissiontext{
+  width: 100%;
+  margin: auto;
+  padding: 0.5rem;
+}
+
+.vissiontext h3{
+  font-family: 'poppin';
+  font-size:40px;
+  font-weight: 600;
+  line-height: 35px;
+  }
+
+  .vissiontext p{
+    font-size: 26px;
+    font-weight: 400;
+    text-align: left;
+    width: 100%;
+    line-height: 40px;
+    }
+
+/* ------------Executives----------------- */
+.containerexecutives{
+  width: 100%;
+  /* height: 60vh; */
+  background: green;
+}
+
+.containerexecutives h1{
+  width: 100%;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  font-family: poppin;
+  margin-left: 0.1rem;
+}
+
+.Executives .row1{
+  width: 90%;
+  margin: auto;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.row1 .pix img{
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+.pix h3{
+  font-size: 22px;
+  font-weight: 600;
+  
+}
+
+.pix h5{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.committee{
+  width: 100%;
+  padding: 3px;
+  margin-bottom: 30px;
+}
+
+.committee h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.committee h5{
+  font-size: 20px;
+  font-weight: 600;
+}
+.accordion{
+  width: 95%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border-left-color: green;
+}
+
+table{
+  width: 100%;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  }
+  th{
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    background: #2c3e50;
+    letter-spacing: 3px; 
+  }
+    
+  td{
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  background: #abb2b9;
+  color: black;
+  }
+    
+  table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 3px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  justify-content: center;
+  margin: auto; 
+  }
+
+  /* ------------Constitution----------------- */
+  .containerconstitution h1{
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 350px;
+    margin-left: 0rem;
+  }
+  .constitution{
+    width: 100%;
+    /* height: 130vh; */
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 2rem 0.5rem;
+    gap: 0rem;
+  }
+  .constpic{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px; 
+    margin-top: 10px;
+  }
+  
+  .constpic button{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .constitext h3{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    }
+  
+    .constitext p{
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: left;
+      padding: 0rem;
+      line-height: 40px;
+      }
+
+      /* CHAIRMAN FOREWORD */
+
+.containerfore{
+  width: 100%;
+  background-image:none; 
+  background-color: green;
+}
+
+.containerfore h1{
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 100px;
+  margin-left: 0px;
+  font-weight: 700;
+  margin-left: 0px;
+  margin: auto;
+  padding-bottom: 0rem;
+}
+
+.chairfore{
+  width: 100%;
+  /* height: 230vh; */
+  display: block;
+  margin: auto;
+  padding: 0px;
+}
+.imagezide img{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 0.5rem;
+  margin-top: 0px;
+}
+
+.textzide h2{
+  font-size: 33px;
+  /* margin-top: 50px; */
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.textzide p{
+  padding: 10px;
+}
+
+.textzide h3{
+  padding: 10px;
+  font-weight: 800;
+}
+
+.textzide p{
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+/* PUBLICATION */
+.containerpublic{
+  width: 100%;
+  margin: auto;
+  background-image:none;
+  background-color: green
+}
+.containerpublic h1{
+  width: 100%;
+  font-size: 35px;
+  text-align: center;
+  margin: auto;
+  padding-top: 90px;
+}
+
+.publication{
+  width: 100%;
+  /* height: 410vh; */
+  margin: auto;
+  padding: 0.5rem;
+  /* margin-bottom: 2rem; */
+}
+
+.cardwrap{
+  margin-bottom: 20px;
+}
+.pubcards{
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Membership */
+.containermembership{
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-bottom: 3rem;
+}
+
+.containermembership h2{
+  font-size: 35px;
+  color: white ;
+  text-align: center;
+  padding-top: 100px;
+  font-weight: 600;
+  font-family: 'poppin';
+  /* margin-left: 25px; */
+  width: 100%;
+}
+
+.containermembership p{
+  font-size: 20px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  line-height: 35px;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.containermembership button{
+  width: 100%;
+  height: 50px;
+}
+
+.containermembership button a{
+  font-size: 25px;
+  font-weight: 600;
+}
+.membership{
+  width: 100%;
+  margin: auto;
+}
+.cardz{
+  display: block;
+  padding: 0px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+.cads{
+  width: 95%;
+  height: auto;
   padding: 10px;
   margin: 2rem 0.5rem;
   align-items: center; 
@@ -3470,137 +4757,233 @@ margin-top: 0.8rem;
 }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1100px){
 
-@media screen and (min-width: 481px) and (max-width: 768px){
+/* ------------hero 1---------------- */
+.header{
+  padding: 12px 0;
+}
+.header .menu{
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(118, 52%, 71%);
+  padding: 15px 30px 30px;
+  overflow-y: auto;
+  z-index: 1;
+  transform: translateX(100%);
+}
 
-  .hidemobileon{
-    display: none;
-  }
-  .logo img{
-    width: 70%;
-    margin-top: 0.5rem;
-  }
-  .hero1container{
-    width: 90%;
-    margin: auto;
-    justify-content: center;
-    padding-bottom: 3rem;
-  }
-  .contwrap{
-    width: 100%;
-    text-align: center;
-    margin-top: 0rem;
-    
-  }
-  
-  .contwrap h1{
-    width: 100%;
-    font-size: 1.6rem;
-    line-height: 40px;
-    font-weight: 700;
-    margin-bottom: 0rem;
-    margin: 4rem 0rem;
-  }
-  
-  .contwrap p{
-    width: 100%;
-    font-size: 1.2rem;
-    font-weight: 300;
-    text-align: left;
-    line-height: 1.8rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* padding: 0.5rem; */
-  }
+.header .menu.open{
+  transform: none;
+}
 
-/* hero2 */
+.header .menu .head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
 
+.header .menu .close-menu-btn{
+  height: 40px;
+  width: 40px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.header .menu .close-menu-btn::before,
+.header .menu .close-menu-btn::after{
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.header .menu .close-menu-btn::before{
+  transform: rotate(45deg);
+}
+
+.header .menu .close-menu-btn::after{
+  transform: rotate(-45deg);
+}
+
+.header .menu > ul > li{
+  display: block;
+}
+
+.header .menu > ul > li:not(:last-child){
+  margin-right: 0;
+}
+
+.header .menu li{
+  border-bottom: 1px solid hsl(0, 0%, 100%, 0.25);
+}
+
+.header .menu li:first-child{
+ border-top: 1px solid hsl(0, 0%, 100%, 0.25);
+}
+
+.header .menu > ul > li > a{
+padding: 4px 0;
+}
+
+.header .menu > ul > .dropdown > a{
+  padding-right: 34px;
+}
+
+.header .menu i{
+  height: 34px;
+  width: 34px;
+  border: 1px solid hsl(0, 0%, 100%, 0.25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  cursor: pointer;
+  top: 7px;
+}
+
+.header .menu .dropdown.active > i{
+  background-color: hsla(0, 0%, 100%, 0.23);
+  transform: rotate(180deg);
+}
+
+.header .menu .sub-menu{
+  position: static;
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+  padding: 0;
+  transition: none;
+  box-shadow: none;
+  width: 100%;
+  display: none;
+}
+.header .menu .dropdown.active > .sub-menu{
+  display: block;
+}
+.header .menu .sub-menu li:last-child{
+  border-bottom: none;
+}
+
+.header .menu .sub-menu a{
+ padding: 5px 0 5px 15px;
+}
+
+.header .menu .sub-menu .sub-menu a{
+ padding-left: 30px;
+}
+
+.header .menu .sub-menu .sub-menu .sub-menu a{
+  padding-left: 45px;
+}
+
+ .header .menu .sub-menu span{
+  background-image: none;
+}
+
+ .header .menu .sub-menu i{
+  transform: none;
+  right: 0;
+}
+
+ .header-right .open-menu-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  position: relative;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+}
+
+.header-right .open-menu-btn .line{
+  height: 2px;
+  width: 30px;
+  background-color:white;
+  position: absolute;
+}
+
+.header-right .open-menu-btn .line-1{
+  transform: translateY(-8px);
+}
+
+.header-right .open-menu-btn .line-3{
+  transform: translateY(8px);
+}
+
+/* ------------hero 1---------------- */
+.contwrap{
+  width: 90%;
+  margin-top: 7rem;
+}
+.contwrap h1{
+  font-size: 1.8rem;
+  color:  white;
+  font-weight: 600;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.contwrap p{
+  width: 90%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.search{ 
+margin: 2rem 0;
+}
+
+/* ------------Hero 2 container----------------- */
 .Hero2{
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: auto;
-  padding: 0rem 0rem;
+  padding: 1rem 1rem;
+  justify-content: center;
 }
-
 .imageside{
   width: 100%; 
-  margin: auto;
-  justify-content: center;
-  align-items: center; 
 }
-
-.imageside img{
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  align-items: center;
-  margin: 0rem 1rem;
-  border-radius: 1rem;
-}
-
-.imageside h2{
-  font-size: 1.4rem;
-  margin: auto;
-  padding: 0.4rem;
-  margin-top: 0.2rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-}
-
 .textside{
-  width: 95%;
-  margin: auto;
-  align-items: center;
-  text-align: center;
+  width: 100%;
+}
+.imageside img{
+  width: 70%;
+  height: auto; 
+}
+.imageside h2{
+  width: 100%;
 }
 
 .textside h2{
-  font-size: 1.9rem;
-  margin-top: 0.7rem;
-  font-weight: 600;
+  font-size: 2rem;
   text-align: center;
+  margin-top: 2rem;
 }
 hr{
   width: 100%;
-  margin-top: 0.2rem;
-  margin-bottom: 0.9rem;
+  border: 1px solid greenyellow;
 }
 
-.textside p{
-  width: 100%;
-  font-size: 1.1rem;
-  margin-top: 0.8rem;
-  margin-bottom: 0.6rem;
-  font-weight: 300;
-  line-height: 1.7rem;
-  padding: 0 0.4rem;
-}
-.textside button{
-  margin: auto;
-  padding: 0.5rem;
-  width: 100%;
-  font-size: 1.4rem;
-  margin-top: 1rem;
-  margin-bottom: 0.2rem;
-}
 
-.textside button:hover{
-  background: linear-gradient( 65deg, yellow, green);
-  transition: 0.25s;
-  border-radius: 4rem;
-}
-
-/* hero3 */
-
-
-/* no code here */
-
-
-
-/* hero4 */
+/* ------------Hero 4 container-----------------  */
 .Hero4{
   width: 100%;
-  padding: 0.5rem 0.5rem;
+  padding: 1rem 0.5rem;
 }
 
 .Hero4 h1{
@@ -3612,50 +4995,1265 @@ hr{
   font-size: 1.3rem;
   font-weight: 400;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin-bottom: 2rem;
 }
 .row1{
-  display: block;
+  /* display: block; */
   gap: 0.1rem;
-  /* margin-top: 1rem; */
+  margin-top: 1rem;
 } 
 
 .row2{
-  display: block;
+  /* display: block; */
   gap: 0.875rem;
 } 
-.row{
-  /* margin-bottom: 7rem; */
-  align-items: center;
-  margin: auto;
-  width: 100%;
- }
- .row h2{
+
+.row h2{
   font-size: 1.2rem;
   text-align: left;
-  margin-top: 0rem;
+  margin-top: 0.9rem;
   font-weight: 500;
 }
+
+.rowinner img{
+  width: 15%;
+  height: 15%;
+}
+
+.row{
+ margin-bottom: 2rem;
+ width: 100%;
+ height: auto; 
+}
+
+.rowinner p{
+  font-size: 1.2rem;
+  text-align: left;
+  font-weight: 300;
+  width: 80%;
+}
+
+/* ------------Hero 5 container----------------- */
+.cadre .row1{
+  display: block;
+  margin-top: 1.5rem;
+} 
+
+.cadre .row2{
+  display: block;
+  margin-top: 1.5rem;
+  }
+
+  .member{
+    margin-top: 2rem;
+  }
+
+  /* ------------Hero 6 container----------------- */
+  .Hero6{
+    width: 100%;
+    padding: 2rem 0.5rem;
+    /* height: 80vh; */
+  }
+  
+  .sides{
+    width: 90%;
+    /* height: 38rem; */
+    height: auto;
+    display: block;
+    padding: 2rem 1rem;
+  }
+  
+  .Hero6 h1{
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .posterside{
+    width: 100%;
+  }
+  .posterside img{
+    width: 100%;
+    height: 100%;
+  }
+  .regside{
+    width: 100%;
+  }
+  
+  .regside h2{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+ /* ------------Hero 7 container----------------- */
+ .hero7{
+      width: 100%;
+      /* height: 250vh; */
+      padding: 1rem 0.2rem; 
+      margin: auto;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .hero7 h2{
+      width: 100%;
+      text-align: center;
+    }
+    
+    
+    .pubcards{
+      width: 100%;
+      /* height: 450px; */
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      align-items: center;
+    }
+    
+    .cardwrap{
+      width: 22rem;
+      height: 26rem;
+      margin-right: 0rem;
+      box-shadow: none;
+      margin-bottom: 2rem;
+      margin: auto;
+      align-items: center;
+    }
+    
+    .carding{
+      width: 22rem;
+      height: 22rem;
+      background: rgb(219, 192, 143);
+    }
+    
+    .sub{
+      width: 22rem;
+      height: 4rem;
+      margin-bottom: 2rem;
+    }
+    
+    .hero7 button{
+      width: 100%;
+      height: 3.125rem;
+      margin: auto;
+      border-radius: 0.625rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 0.5rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+/* ------------Hero 8 container----------------- */
+.hero8{
+  width: 100%;
+  /* height: 130vh; */
+  margin: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(Images/background.jpg);
+  background-size: contain;
+  padding: .5rem .5rem;
+}
+
+.hero8 h2{
+  color: greenyellow;
+  }
+  
+  .hero8 h4{
+  color: greenyellow;
+  width: 100%;
+  }
+
+.hero8 h4{
+  font-size: 1.5rem;
+  width: 100%;
+  }
+
+  .sidez{
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  .mapside{
+    width: 100%;
+  }
+
+  .contactside{
+    width: 100%;
+  }
+
+  .rew1{
+  width: 100%;
+  gap: 1rem;
+  }
+
+  .rew2{
+    width: 50%;
+    justify-content: space-between;
+    padding: 2rem;
+    }
+
+  .rew1 h5{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2rem;
+    text-align: left;
+    color: white;
+  }
+
+  .rew2 img{
+    width: 8%;
+    height: 8%;
+  }
+
+
+  /* ------------Hero 9  Footer container----------------- */
+  .footer{
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+  }
+  .CompLogo{
+    width: 15%;
+  }
+  .CompLogo img{
+    width: 100%;
+  }
+  .CompLogo h3{
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .Quicklinks{
+    width: 10%;
+    text-align: left;
+    margin-left: 2rem;
+  }
+  .Quicklinks h2{
+    font-size: 1rem;
+    width: 100%;
+  }
+  .Quicklinks ul li{
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .Getintouch{
+    width: 22%;
+  }
+  .Getintouch h2{
+    font-size: 1rem;
+  }
+  
+  .Getintouch h3{
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .SocialMedia{
+    width: 10%;
+  }
+  .SocialMedia h2{
+    font-size: 1rem;
+  }
+  .socialMediaIcons ul li{
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .Newsletter{
+    width: 45%;
+  }
+  .Newsletter h2{
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  /* MISSION AND VISSION INDEX */
+
+.containermission{
+  background-color: green;
+  background-image: none;
+  background-size: cover;
+  /* margin: 0rem 0.5rem; */
+}
+
+.containermission h1{
+  width: 100%;
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.missionandvission{
+  width: 100%;
+  /* height: 100vh; */
+  margin: auto;
+}
+
+.mission{
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: 0rem 0.5rem;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+.image{
+  width: 100%;
+  padding: 0.5rem;
+}
+.image img{
+  width: 100%;
+  height: 100%;
+}
+
+.missiontext{
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.missiontext h3{
+  font-family: 'poppin';
+  font-size:40px;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+.missiontext p{
+ font-size: 26px;
+ font-weight: 400;
+ text-align: left;
+ width: 100%;
+ line-height: 40px;
+}
+
+.vission{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0rem 0.5rem;
+  margin-bottom: 0px;
 }
 
 
+.vissiontext{
+  width: 100%;
+  margin: auto;
+  padding: 0.5rem;
+}
+
+.vissiontext h3{
+  font-family: 'poppin';
+  font-size:40px;
+  font-weight: 600;
+  line-height: 35px;
+  }
+
+  .vissiontext p{
+    font-size: 26px;
+    font-weight: 400;
+    text-align: left;
+    width: 100%;
+    line-height: 40px;
+    }
+    
+
+    /* <!-- The Executives --> */
+
+    .containerexecutives{
+      width: 100%;
+      /* height: 60vh; */
+      background: green;
+    }
+
+    .containerexecutives h1{
+      width: 100%;
+      font-size: 30px;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+      padding-bottom: 0.5rem;
+      font-weight: 700;
+      font-family: poppin;
+      margin-left: 0.1rem;
+    }
+
+    .Executives .row1{
+      width: 90%;
+      margin: auto;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .row1 .pix img{
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+    }
+    .pix h3{
+      font-size: 22px;
+      font-weight: 600;
+      
+    }
+    
+    .pix h5{
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .committee{
+      width: 100%;
+      padding: 3px;
+      margin-bottom: 30px;
+    }
+
+    .committee h2{
+      font-size: 40px;
+      margin-bottom: 20px;
+      margin-top: 40px;
+    }
+
+    .committee h5{
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .accordion{
+      width: 95%;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      border-left-color: green;
+    }
+
+    table{
+      width: 100%;
+      margin: 10px;
+      justify-content: center;
+      align-items: center;
+      }
+      th{
+        font-weight: 500;
+        font-size: 15px;
+        text-align: center;
+        color: white;
+        background: #2c3e50;
+        letter-spacing: 3px; 
+      }
+        
+      td{
+      font-weight: 600;
+      font-size: 14px;
+      text-align: center;
+      background: #abb2b9;
+      color: black;
+      }
+        
+      table, th, td{
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 3px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      justify-content: center;
+      margin: auto; 
+      }
+
+/* CONSTITUTION */
+
+.containerconstitution h1{
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 350px;
+  margin-left: 0rem;
+}
+.constitution{
+  width: 100%;
+  /* height: 130vh; */
+  margin: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 2rem 0.5rem;
+  gap: 0rem;
+}
+.constpic{
+  width: 100%;
+  height: 400px;
+  margin-bottom: 50px; 
+  margin-top: 10px;
+}
+
+.constpic button{
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+}
+.constitext h3{
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  }
+
+  .constitext p{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    padding: 0rem;
+    line-height: 40px;
+    }
+
+/* CHAIRMAN FOREWORD */
+
+.containerfore{
+  width: 100%;
+  background-image:none; 
+  background-color: green;
+}
+
+.containerfore h1{
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 100px;
+  margin-left: 0px;
+  font-weight: 700;
+  margin-left: 0px;
+  margin: auto;
+  padding-bottom: 0rem;
+}
+
+.chairfore{
+  width: 100%;
+  /* height: 230vh; */
+  display: block;
+  margin: auto;
+  padding: 0px;
+}
+.imagezide img{
+  width: 70%;
+  display: flex;
+  height: auto;
+  margin: auto;
+  padding: 0.5rem;
+  margin-top: 0px;
+}
+
+.textzide h2{
+  font-size: 33px;
+  /* margin-top: 50px; */
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.textzide p{
+  padding: 10px;
+}
+
+.textzide h3{
+  padding: 10px;
+  font-weight: 800;
+}
+
+.textzide p{
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 
-@media screen and (min-width: 769px) and (max-width: 1024px){
+/* PUBLICATION */
+.containerpublic{
+  width: 100%;
+  margin: auto;
+  background-image:none;
+  background-color: green
+}
+.containerpublic h1{
+  width: 100%;
+  font-size: 35px;
+  text-align: center;
+  margin: auto;
+  padding-top: 90px;
+}
 
+.publication{
+  width: 100%;
+  /* height: 410vh; */
+  margin: auto;
+  padding: 0.5rem;
+  /* margin-bottom: 2rem; */
+}
+
+.cardwrap{
+  margin-bottom: 20px;
+}
+.pubcards{
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Membership */
+.containermembership{
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-bottom: 3rem;
+}
+
+.containermembership h2{
+  font-size: 35px;
+  color: white ;
+  text-align: center;
+  padding-top: 100px;
+  font-weight: 600;
+  font-family: 'poppin';
+  /* margin-left: 25px; */
+  width: 100%;
+}
+
+.containermembership p{
+  font-size: 20px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  line-height: 35px;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.containermembership button{
+  width: 100%;
+  height: 50px;
+}
+
+.containermembership button a{
+  font-size: 25px;
+  font-weight: 600;
+}
+.membership{
+  width: 100%;
+  margin: auto;
+}
+.cardz{
+  display: block;
+  padding: 0px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+.cads{
+  width: 95%;
+  height: auto;
+  padding: 10px;
+  margin: 2rem 0.5rem;
+  align-items: center; 
+}
+
+.cads p{
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 30px;
+  width: 100%;
+}
+
+.cads button{
+  padding: 10px;
+  width: 300px;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: Roboto;
+}
+
+
+.cads a{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+
+/* sign up form */
+.signup{
+  width: 100%;
+  padding: 10px;
+}
+.signup input{
+  width: 100%;
+  font-size: 20px;
+}
+
+
+.signup h2{
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+.signup h1{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.agree{
+  font-size: 23px;
+  width: 100%;
+}
+.signup button{
+  width: 100%;
+  font-size: 25px;
   
+}
+
+/* sign in form */
 
 
+.signin{
+  width: 80%;
+}
+.box{
+  width: 80%;
+}
+.btn button{
+  width: 80%;
+}
+.signin h2{
+  text-align: center;
+}
+.inputbox{
+  position: relative;
+  width: 100%;
+  margin-top: 35px;
+}
 
+
+.signin p{
+  width: 100%;
+  font-size: 20px; 
+}
+.links{
+  display: flex;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  justify-content: space-between;
+  
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 950px){
+/* ------------Hero 9  Footer container----------------- */
+.footer{
+  width: 100%;
+  display: block;
+  padding: 1rem 1rem;
+}
+.CompLogo{
+  width: 70%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.CompLogo img{
+  width: 80%;
+  align-items: center;
+  margin: auto;
+  /* margin-left: 0.1rem; */
+}
+.CompLogo h3{
+  font-size: 1rem;
+  font-weight: 450;
+  line-height: 1.5rem;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.Quicklinks{
+  text-align: left;
+  margin-left: 0rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.Quicklinks h2{
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
+}
+
+.Quicklinks ul li{
+  font-size: 0.95rem;
+}
+
+.Getintouch{
+  width: 100%;
+  margin: auto;
+  margin-left: 0rem;
+  margin-bottom: 2rem;
+}
+.Getintouch h2{
+  font-size: 1.2rem; 
+  padding-bottom: .5rem;
+  
+}
+.Getintouch h3{
+  font-size: 0.95rem;
+  width: 100%;
+  line-height: 1.5rem;
+
+}
+
+.SocialMedia{
+  width: 100%;
+  text-align: left;
+  margin-right: 0rem;
+  margin-bottom: 2rem;
+}
+.SocialMedia h2{
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
+}
+.socialMediaIcons ul li{
+  font-size: 0.9rem;
+}
+
+.Newsletter{
+  width: 100%;
+  /* margin: auto; */
+  /* display: block; */
+  /* justify-content: left; */
+  /* align-items: center; */
+}
+
+.Newsletter h2{
+  width: 100%;
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+  text-align: left;
+  color: white;
+  padding-bottom: 1.5rem;
+}
+
+.Newsletter .forms input{
+  width: 100%;
+  /* justify-content: left; */
+
+}
+
+.Newsletter .forms button{
+  /* padding: .5rem 4rem; */
+  width: 100%;
+  /* height: 3rem; */
+} 
+
+.Copyright{
+  width: 100%;
+  margin: auto;
+  padding: .5rem 1rem;
+
+}
+
+.Copyright p{
+  font-family: 'Roboto';
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+  color:white;
+  width: 100%;
+}
 
 }
 
 
-@media screen and (min-width: 1025px) and (max-width: 1550px){
+/* @media screen and (min-width: 1026px) and (max-width: 1090px){
+  .header{
+    padding: 0 15px;
+ }
+ .header .menu > ul > li:not(:last-child){
+   margin-right: 10px;
+ }
+ .header .menu a{
+   font-size: 16px;
+ }
+ .header .logo img{
+   vertical-align: middle;
+   width: 50%;
+ }
+ .header .menu  > ul > .dropdown > a{
+   padding-right: 15px;
+ }
+} */
+@media screen and (min-width: 1101px) and (max-width: 1280px){
 
+/* ----------------THE HEADER PANEL------------------*/
+
+.header{
+   padding: 0 10px;
+}
+.header .menu > ul > li:not(:last-child){
+  margin-right: 10px;
+}
+.header .menu a{
+  font-size: 18px;
+}
+.header .logo img{
+  vertical-align: middle;
+  width: 50%;
+}
+
+.header .menu > ul > li{
+  display: inline-block;
+  /* padding: 3px; */
   
+}
+.header .menu  > ul > .dropdown > a{
+  padding-right: 15px;
+}
+
+/* ------------hero 1---------------- */
+
+/* no code */
+
+/* ------------Hero 2 container----------------- */
+.Hero2{
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  padding: 1rem 1rem;
+  justify-content: center;
+}
+.imageside{
+  width: 40%; 
+}
+.textside{
+  width: 60%;
+}
+.imageside img{
+  width: 90%;
+  height: auto; 
+}
+.imageside h2{
+  width: 90%;
+}
+
+.textside h2{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+hr{
+  width: 100%;
+  border: 1px solid greenyellow;
+}
+
+/* ------------Hero 4 container-----------------  */
+.Hero4{
+  width: 100%;
+  padding: 1rem 1rem;
+}
+
+.Hero4 h1{
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 0.625rem;
+}
+.Hero4 h2{
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.row1{
+  /* display: block; */
+  gap: 0.1rem;
+  margin-top: 1rem;
+} 
+
+.row2{
+  /* display: block; */
+  gap: 0.875rem;
+} 
+
+.row h2{
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 0.9rem;
+  font-weight: 500;
+}
+
+.rowinner img{
+  width: 15%;
+  height: 15%;
+}
+
+.row{
+ margin-bottom: 2rem;
+ width: 100%;
+ height: auto; 
+}
+
+.rowinner p{
+  font-size: 1.2rem;
+  text-align: left;
+  font-weight: 300;
+  width: 70%;
+}
+
+/* ------------Hero 6 container----------------- */
+.sides{
+  width: 100%;
+  height: auto;
+}
+.posterside{
+  width: 60%;
+}
+.regside{
+  width: 40%;
+}
+
+/* ------------Hero 7 container----------------- */
+.hero7{
+  width: 100%;
+  padding: 1rem 0.2rem; 
+}
+
+.hero7 h2{
+  width: 100%;
+  text-align: center;
+}
 
 
+.pubcards{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.cardwrap{
+  width: 22rem;
+  height: 26rem;
+  margin-right: 0rem;
+  box-shadow: none;
+  margin-bottom: 2rem;
+  margin: auto;
+  align-items: center;
+}
+
+.carding{
+  width: 22rem;
+  height: 22rem;
+  background: rgb(219, 192, 143);
+}
+
+.sub{
+  width: 22rem;
+  height: 4rem;
+  margin-bottom: 2rem;
+}
+
+.hero7 button{
+  width: 100%;
+  height: 3.125rem;
+  margin: auto;
+  border-radius: 0.625rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------------Hero 8 container----------------- */
+.sidez{
+  width: 95%;
+  gap: 2rem;
+}
+.contactside{
+  width: 35%;
+}
+.mapside {
+  width: 65%;
+  height: auto;
+  border: 5px solid white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.hero8 h4{
+  width: 100%;
+  font-size: 1.4rem;
+  }
+
+/* MISSION AND VISSION INDEX */
+
+.containermission h1{
+  width: 50%;
+  font-size: 50px;
+  padding-top: 300px;
+}
+
+/* THE EXECUTIVES */
+.containerexecutives h1{
+  padding-top: 250px;
+}
+.Executives{
+  width: 90%;
+}
+.Executives .row1{
+  width: 100%;
+}
+
+.row1 .pix img{
+  width: 300px;
+  height: auto;
+  border-radius: 30px;
+}
+/* CHAIRMAN FOREWORD */
+.containerfore h1{
+  padding-top: 250px;
+}
+
+/* PUBLICATION */
+.containerpublic h1{
+  padding-top: 250px;
+}
+
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1550px){
+
+}
 
 
+/* =====================last stages======================= */
+
+/* -----------------REQUISITION--------------- */
+.requisition{
+  width: auto;
+  padding: 1rem;
+  margin: auto;
+  background-image: url(Images/requisition.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Container for the moving heading */
+.moving-heading {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  color: green;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1000; /* Ensures the heading stays on top */
+}
+
+/* Styling for the heading */
+.moving-heading h1 {
+  font-size: 24px;
+  white-space: nowrap;
+  animation: moveHeading 15s linear infinite;
+}
+
+/* Keyframes for animation */
+@keyframes moveHeading {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px){
+
+  .moving-heading h1 {
+    font-size: 18px;
+  }
+
+  .requisition{
+    /* width: 100%; */
+    height: 100vh;
+    background-size: auto;
+  }
+}
+
+/* -----------------SECRETARIATE--------------- */
+.secretariate{
+  width: auto;
+  padding: 1rem;
+  margin: auto;
+  background-image: url(Images/secretariate.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* -----------------ATTENDANCE--------------- */
+.attendance{
+  width: auto;
+  padding: 1rem;
+  margin: auto;
+  background-image: url(Images/attendance.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+/* -----------------SCALE OF FEES--------------- */
+.sof{
+  width: auto;
+  padding: 1rem;
+  margin: auto;
+  background-image: url(Images/SOF.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.ogunmap{
+  width: auto;
+  padding: 1rem;
+  margin: auto;
+  background-image: url(Images/ogunmap.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.cors{
+  width: auto;
+  padding: 1rem;
+  margin: auto;
+  background-image: url(Images/cors.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
