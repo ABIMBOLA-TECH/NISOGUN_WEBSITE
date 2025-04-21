@@ -78,7 +78,7 @@ document.getElementById('scrollup').addEventListener('click',
 
 
 
-
+//JAVASCRIPT DARK AND LIGHT MODE
     const toggleButton = document.getElementById("toggleMode");
     const mapContainer = document.querySelector(".mapside");
     let isDarkMode = false;
@@ -92,3 +92,17 @@ document.getElementById('scrollup').addEventListener('click',
         toggleButton.textContent = isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode";
     });
 
+
+// JAVASCRIPT SEARCH ENGINE
+    document.getElementById('search-button').addEventListener('click', () => {
+        const searchInput = document.getElementById('search-input').value.trim();
+        if (searchInput) {
+          // Redirect to the sub-page with the search query
+          window.location.href = `searchpage.html?query=${encodeURIComponent(searchInput)}`;
+        } else {
+          alert("Please enter a registration number!");
+        }
+      });
+      
+
+    

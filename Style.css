@@ -250,55 +250,57 @@ body{
     margin-top: 3rem;
 }
 
-.search{
-    display: flex;
-    flex-direction: row; 
-    margin: 4rem 0;
+.search-container {
+  text-align: center;
+  display: flex;
+  flex-direction: row; 
+  gap: 10px;
+  margin: 4rem 0;
 }
 
-.search input{
-    width: 24rem;
-    height: 60px;
-    background-color: green;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-align: left;
-    border: none;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px 0px  0px 20px;
-    font-family: 'poppins';
-    outline: none;
-    border: none;
-    padding: 0 20px;
-    /* margin-top: 2rem; */
-}
-
-input[type="text"]::placeholder {
-  color:white; 
-}
-
-.search button {
-  width: 6rem;
-  height: 60px;
-  color:green;
-  font-size: 1.2rem;
-  font-weight: 600;
-  font-family: poppins;
+.search-container input {
+  padding: 12px;
+  width: 400px;
   border: none;
   outline: none;
-  margin-left: -1;
-  text-align: center;
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 5px;
+  color: green;
+  font-family: 'Times New Roman', Times, serif;
+  /* background: #330033; */
+  font-weight: 600;
+  font-size: 30px;
 }
 
-.search button:hover {
-  background: linear-gradient( 65deg, green, yellow);
-  transition: 50s;
+.search-container input::placeholder {
+  color: green; 
+  font-style: italic;
+  opacity: 1;
+
 }
- 
+
+.searchbutton {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  padding: 10px 40px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.searchbutton i {
+  margin-right: 15px; 
+  font-size: 25px;
+}
+
+.searchbutton:hover {
+  background: linear-gradient( 65deg,yellow, green);
+    transition: 50s;
+}
 
 .btnhero1 button:hover{
     background: linear-gradient( 65deg,yellow, green);
@@ -320,6 +322,100 @@ input[type="text"]::placeholder {
     }
    
 } 
+
+/* SEARCH PAGE STYLING */
+
+/* Background styling */
+.background-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(Images/NIS-SEC.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Container styling for results */
+.results-container {
+  text-align: left;
+  width: 40%;
+  color: green;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Member card styling */
+.member-card {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
+}
+
+.member-card:hover {
+  transform: scale(1.01); /* Slight zoom effect */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.member-card img {
+  display: block;
+  margin: auto;
+  width: 65%;
+  height: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Transition for hover effects on image */
+}
+
+.member-card img:hover {
+  transform: rotate(360deg); /* Rotates the image on hover */
+}
+
+.member-card h2 {
+  color: rgb(12, 201, 12);
+  margin-bottom: 10px;
+  width: 95%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  text-transform: uppercase; /* Capitalized for a bold look */
+}
+
+.member-card p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.results-container h1 {
+  color: rgb(1, 54, 1);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a soft shadow to the text */
+}
+.mem_info{
+  font-size: 15px;
+  font-family: 'Poppins';
+  color: green;
+  font-weight: 600;
+  line-height: 33px;
+}
+
+
+
 
 /* ------------Hero 2 container----------------- */
 /* HERO2 BEGINS */
@@ -2697,28 +2793,59 @@ width: 100%;
   /* padding: 0.5rem; */
 }
 
-.search input{
-  width: 70%;
-  height: 50px;
-  padding: 0 10px;
+input{
+  width: 75%;
+  padding: 12px;
 }
 
 input[type="text"]::placeholder {
 color:white; 
 }
 
-.search button {
-width: 30%;
-height: 50px;
-
+.searchbutton{
+width: 25%;
+padding: 10px 20px;
+font-size: 20px;
 }
 
-.search{
+.search-container {
 width: 100%;
 margin: 2rem 0;
 }
 
+.searchbutton i {
+  margin-right: 10px; /* Space between the icon and text */
+  font-size: 20px;
+}
 
+/* SEARCH PAGE STYLING */
+.background-container {
+  background-image: none;
+}
+.results-container {
+  width: 100%;
+  padding: 5px;
+}
+.member-card {
+  width: 90%;
+  margin-top: 20px;
+  padding: 5px;
+}
+.member-card img {
+  width: 80%;
+  height: 300px;
+}
+.member-card h2 {
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 18px;
+}
+.member-card p {
+  line-height: 1.1;
+}
+.results-container h1 {
+  font-size: 1.7rem;
+}
 /* ------------hero 2---------------- */
 
 .Hero2{
@@ -3876,7 +4003,7 @@ margin-top: 0.8rem;
 
   /* ------------hero 1---------------- */
   .contwrap{
-    width: 90%;
+    width: 95%;
     margin-top: 7rem;
   }
   .contwrap h1{
@@ -3892,10 +4019,59 @@ margin-top: 0.8rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
-.search{ 
-  margin: 2rem 0;
+input{
+  width: 80%;
+  padding: 12px;
 }
 
+input[type="text"]::placeholder {
+color:white; 
+}
+
+.searchbutton{
+width: 20%;
+padding: 10px 20px;
+font-size: 20px;
+}
+
+.search-container {
+width: 100%;
+margin: 2rem 0;
+}
+
+.searchbutton i {
+  margin-right: 10px; /* Space between the icon and text */
+  font-size: 20px;
+}
+/* SEARCH PAGE STYLING */
+.background-container {
+  background-image: url(Images/NIS-SEC.png);
+
+}
+.results-container {
+  width: 100%;
+  padding: 25px;
+}
+.member-card {
+  width: 75%;
+  margin-top: 20px;
+  padding: 5px;
+}
+.member-card img {
+  width: 80%;
+  height: 300px;
+}
+.member-card h2 {
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 18px;
+}
+.member-card p {
+  line-height: 1.3;
+}
+.results-container h1 {
+  font-size: 1.9rem;
+}
 /* ------------Hero 2 container----------------- */
 .Hero2{
   width: 100%;
@@ -4945,6 +5121,25 @@ padding: 4px 0;
 }
 .search{ 
 margin: 2rem 0;
+}
+
+/* SEARCH PAGE STYLING */
+.results-container {
+  width: 60%;
+}
+.member-card h2 {
+  width: 100%;
+  font-size: 20px;
+}
+.member-card img {
+  width: 75%;
+}
+.member-card {
+  width: 80%;
+  margin-top: 20px;
+  padding: 10px;
+ 
+  
 }
 
 /* ------------Hero 2 container----------------- */
