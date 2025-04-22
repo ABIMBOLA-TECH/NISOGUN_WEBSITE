@@ -2793,9 +2793,9 @@ width: 100%;
   /* padding: 0.5rem; */
 }
 
-input{
+#search-input{
   width: 75%;
-  padding: 12px;
+  padding: 10px;
 }
 
 input[type="text"]::placeholder {
